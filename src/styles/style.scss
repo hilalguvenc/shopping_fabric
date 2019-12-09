@@ -1,0 +1,253 @@
+
+$colors: (
+    primary: #121212,
+);
+
+body{
+    background: white;
+}
+.header{
+    font: {
+        family: cursive;
+        size: 10px;
+        style: oblique;
+        weight: 10px;
+        color: map-get($colors,primary);
+ }
+  position: absolute;
+  left: 30px;
+  top:30px;
+}
+li{
+    list-style-type:none;
+    position: relative;
+    display: inline;
+    margin: 5px;
+    font-family: Brandon Text Regular,sans-serif;
+}
+@mixin cards{ 
+    width: 230px;
+    height: 290px;
+    display: inline;
+    position: absolute;
+    position: absolute;
+    top: 140px;
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card1{
+  @include cards;
+  left: 50px;
+}
+.card2{
+  @include cards;
+  left: 300px;
+}
+.card3{
+   @include cards;
+   left:550px;
+}
+.card4{
+   @include cards;
+   left: 800px;
+}
+.card5{
+    @include cards;
+    left:1050px;
+}
+.card6{
+   @include cards;
+   left: 50px;
+   top:460px;
+ }
+.card7{
+   @include cards;
+   left:300px;
+   top:460px;
+}
+.card8{
+  @include cards;
+  left:550px;
+  top:460px;
+}
+.card9{
+  @include cards;
+     left:800px;
+     top:460px;
+ }
+.card10{
+  @include cards;
+     left:1050px;
+     top:460px;
+ }
+ .card11{
+  @include cards;
+    left:50px;
+    top:780px;
+}
+.card12{
+   @include cards;
+     left:300px;
+     top:780px;
+ }
+.card13{
+   @include cards;
+      left:550px;
+      top:780px;
+ }
+.card14{
+   @include cards;
+   left:800px;
+   top:780px;
+ }
+ .card15{
+   @include cards;
+   left:1050px;
+   top:780px;
+ }
+@mixin card_header {
+    font: {
+        family: "Ubuntu Condensed", sans-serif;
+        size: 14px;
+        weight: 700;
+    }  
+       left:-30px;
+       position: absolute;
+       top: -20px;
+       text-align: center;
+        
+}
+.card-header{
+    @include card_header;
+}
+.line{
+    @include card_header; 
+    font-weight: 500;
+    left: 80px; 
+}
+.menu{
+    position: absolute;
+    left: 970px;
+    font-size: 16PX;
+    color: #121212;
+    font-family: Brandon Text Regular,sans-serif;
+    top: 35px;
+  }
+  @mixin popup{
+    position: absolute;
+    height: 600px;
+    z-index: 100;
+    top: center;
+    position: center;
+    left:0px;
+    top: 70px;
+  }
+  .order-popup{
+      @include popup;
+  }
+  .login-popup{
+      @include popup;
+  }
+  .favorite-popup{
+    @include popup;
+  }
+  .basket-popup{
+    @include popup;
+  }
+  @mixin close-popup{
+    background-color:white;
+    border: none; 
+    float: right;
+    color:#484848;
+    font-size:22px;
+    padding: 8px 8px;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    margin-top: -30px;
+  }
+  .order-close-popup{
+    @include close-popup;
+  }
+  .login-close-popup{
+    @include close-popup;
+  }
+  .favorite-close-popup{
+    @include close-popup;
+  }
+  .basket-close-popup{
+    @include close-popup;
+  }
+@mixin cross{
+  color: #484848;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  position: relative;
+  left: 40%;
+  right: 50%;
+}
+.order{
+  @include cross;
+}
+.login{
+  @include cross;
+}
+.favorite{
+  @include cross;
+}
+.basket{
+  @include cross;
+}
+@mixin box{
+  backgroundColor: "white";
+  padding: "20px";
+  width: "400px";
+  height: "600px";
+}
+.userLoginBox{
+  @include box;
+}
+.icon{
+  position: absolute;
+  left: 1245px;
+  top: 47px;
+}
+.icon-1{
+  position: absolute;
+  left: 1200px;
+  top: 47px;
+}
+@mixin page{
+  position: absolute;
+    height: 600px;
+    z-index: 100;
+    top: center;
+    position: center;
+    left:0px;
+    top: 70px;
+}
+.page_1{
+  @include page;
+}
+
+
+ 
+
+  
+  
+  
+  
+
+  
+
+
+
+
+
+
+  
+
+  
+
+    
+  
+    
+     
