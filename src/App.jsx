@@ -1,39 +1,20 @@
-import React, { Component} from 'react';
-import "./styles/style.scss";
+import React, { Component } from 'react';
 import Popup from "./components/Popup";
 import Fabrics from "./components/Fabrics";
+import axios from 'axios';
 
- 
 
- class App extends Component {
-   state = {
-     fabrics : [
-    {
-      id : 1 ,
-      fabric_type : "ŞİŞME MONT",
-      price : "20 TL",
-      length : "3 METRE"
-    },
-    {
-      id : 2 ,
-      fabric_type : "KIŞLIK KAŞE",
-      price : "30 TL",
-      length : "5 METRE"
-    },
-    {
-      id : 3 ,
-      fabric_type : "KREP ",
-      price : "40 TL",
-      length : "5 METRE"
-    },
-    {
-      id : 4 ,
-      fabric_type : "İNCE KUMAŞ",
-      price : "40 TL",
-      length : "5 METRE"
-    },
-  ]
-}
+class App extends Component {
+  state = {
+    fabrics: [],
+  }
+
+  componentDidMount = async () => {
+    const response = await axios.get("http://localhost:3004/fabrics")
+    this.setState({
+      fabrics: response.data
+    })
+  }
 
   render() {
 
@@ -41,9 +22,9 @@ import Fabrics from "./components/Fabrics";
 
       <div>
 
-      
-      <Popup />
-      <Fabrics fabrics = {this.state.fabrics} />
+
+        <Popup />
+        <Fabrics fabrics={this.state.fabrics} />
 
 
       </div>
@@ -53,10 +34,9 @@ import Fabrics from "./components/Fabrics";
 export default App;
 
 
-  
-        
-          
-        
-        
-        
-           
+
+
+
+
+
+

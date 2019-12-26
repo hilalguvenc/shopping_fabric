@@ -1,0 +1,359 @@
+body {
+  background: white;
+}
+
+.header {
+  font-family: cursive;
+  font-size: 14px;
+  font-style: Copperplate;
+  font-weight: 10px;
+  font-color: #121212;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+
+.menu {
+  list-style-type: none;
+  position: absolute;
+  display: inline;
+  font-family: cursive;
+  font-style: Copperplate;
+  font-size: 15px;
+  font-weight: 10px;
+  top: 60px;
+}
+
+.icon {
+  list-style-type: none;
+  position: absolute;
+  display: inline;
+  font-family: cursive;
+  font-style: Copperplate;
+  font-size: 15px;
+  font-weight: 10px;
+  width: 25px;
+  height: 25px;
+  left: 295px;
+}
+
+.icon-1 {
+  list-style-type: none;
+  position: absolute;
+  display: inline;
+  font-family: cursive;
+  font-style: Copperplate;
+  font-size: 15px;
+  font-weight: 10px;
+  width: 25px;
+  height: 25px;
+  left: 265px;
+}
+
+.order-menu {
+  list-style-type: none;
+  position: absolute;
+  display: inline;
+  font-family: cursive;
+  font-style: Copperplate;
+  font-size: 15px;
+  font-weight: 10px;
+  left: 0px;
+}
+
+.login-menu {
+  list-style-type: none;
+  position: absolute;
+  display: inline;
+  font-family: cursive;
+  font-style: Copperplate;
+  font-size: 15px;
+  font-weight: 10px;
+  left: 65px;
+}
+
+.card, .image {
+  width: 100vw;
+  height: 280px;
+  left: 0px;
+  right: 0px;
+  position: relative;
+  top: 140px;
+  z-index: 1;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 65px;
+}
+
+.image {
+  top: 0px;
+}
+
+.card-container {
+  width: 100vw;
+  height: 240px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+}
+
+.content {
+  font-family: cursive;
+  font-style: Copperplate;
+  font-size: 10px;
+  position: absolute;
+  top: 20px;
+}
+
+.order-popup {
+  position: absolute;
+  height: 600px;
+  z-index: 100;
+  top: center;
+  position: center;
+  left: 0px;
+  top: 70px;
+}
+
+.login-popup {
+  position: absolute;
+  height: 600px;
+  z-index: 100;
+  top: center;
+  position: center;
+  left: 0px;
+  top: 70px;
+}
+
+.favorite-popup {
+  position: absolute;
+  height: 600px;
+  z-index: 100;
+  top: center;
+  position: center;
+  left: 0px;
+  top: 70px;
+}
+
+.basket-popup {
+  position: absolute;
+  height: 600px;
+  z-index: 100;
+  top: center;
+  position: center;
+  left: 0px;
+  top: 70px;
+}
+
+.order-close-popup {
+  background-color: white;
+  border: none;
+  float: right;
+  color: #484848;
+  font-size: 22px;
+  padding: 8px 8px;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  margin-top: -30px;
+}
+
+.login-close-popup {
+  background-color: white;
+  border: none;
+  float: right;
+  color: #484848;
+  font-size: 22px;
+  padding: 8px 8px;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  margin-top: -30px;
+}
+
+.favorite-close-popup {
+  background-color: white;
+  border: none;
+  float: right;
+  color: #484848;
+  font-size: 22px;
+  padding: 8px 8px;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  margin-top: -30px;
+}
+
+.basket-close-popup {
+  background-color: white;
+  border: none;
+  float: right;
+  color: #484848;
+  font-size: 22px;
+  padding: 8px 8px;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  margin-top: -30px;
+}
+
+.order {
+  color: #484848;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  position: relative;
+  left: 40%;
+  right: 50%;
+}
+
+.login {
+  color: #484848;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  position: relative;
+  left: 40%;
+  right: 50%;
+}
+
+.favorite {
+  color: #484848;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  position: relative;
+  left: 40%;
+  right: 50%;
+}
+
+.basket {
+  color: #484848;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  position: relative;
+  left: 40%;
+  right: 50%;
+}
+
+.userLoginBox {
+  backgroundColor: "white";
+  padding: "20px";
+  width: "400px";
+  height: "600px";
+}
+
+@media only screen and (min-width: 600px) {
+  header {
+    font-family: cursive;
+    font-size: 40px;
+    font-style: Copperplate;
+    font-weight: 10px;
+    font-color: #121212;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+  }
+  .menu {
+    list-style-type: none;
+    position: absolute;
+    display: inline;
+    font-family: cursive;
+    font-style: Copperplate;
+    font-size: 20px;
+    font-weight: 10px;
+    top: 40px;
+  }
+  .icon {
+    list-style-type: none;
+    position: absolute;
+    display: inline;
+    font-family: cursive;
+    font-style: Copperplate;
+    font-size: 20px;
+    font-weight: 10px;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 1270px;
+  }
+  .icon-1 {
+    list-style-type: none;
+    position: absolute;
+    display: inline;
+    font-family: cursive;
+    font-style: Copperplate;
+    font-size: 20px;
+    font-weight: 10px;
+    width: 35px;
+    height: 35px;
+    left: 1230px;
+  }
+  .order-menu {
+    list-style-type: none;
+    position: absolute;
+    display: inline;
+    font-family: cursive;
+    font-style: Copperplate;
+    font-size: 20px;
+    font-weight: 10px;
+    left: 0px;
+    width: 20px;
+  }
+  .login-menu {
+    list-style-type: none;
+    position: absolute;
+    display: inline;
+    font-family: cursive;
+    font-style: Copperplate;
+    font-size: 20px;
+    font-weight: 10px;
+    left: 245px;
+  }
+  .card, .image {
+    width: 280px;
+    height: 320px;
+    left: 20px;
+    right: 0px;
+    position: relative;
+    top: 150px;
+    z-index: 1;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 65px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 20px;
+  }
+  .image {
+    width: 280px;
+    height: 280px;
+    left: 0px;
+    right: 0px;
+    position: relative;
+    top: 140px;
+    z-index: 1;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 65px;
+    top: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .card-container {
+    width: 240px;
+    height: 340px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .content {
+    font-family: cursive;
+    font-style: Copperplate;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    top: 280px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    word-spacing: 10px;
+  }
+}
+/*# sourceMappingURL=fabric.css.map */

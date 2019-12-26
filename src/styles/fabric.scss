@@ -1,0 +1,318 @@
+$colors: (primary: #121212,
+);
+$myFontFamily: cursive;
+$myFontStyle: Copperplate;
+$myFontWeight:10px;
+
+
+body {
+    background: white;
+}
+
+.header {
+    font: {
+        family: $myFontFamily;
+        size: 14px;
+        style: $myFontStyle;
+        weight: $myFontWeight;
+        color: map-get($colors, primary);
+    }
+
+    position: absolute;
+    left: 20px;
+    top:10px;
+}
+
+//menu
+@mixin list {
+    list-style-type: none;
+    position: absolute;
+    display: inline;
+
+    font : {
+        family: $myFontFamily;
+        style: $myFontStyle;
+        size: 15px;
+        weight: $myFontWeight;
+    }
+}
+
+.menu {
+    @include list;
+    top: 60px;
+
+}
+
+.icon {
+    @include list;
+    width: 25px;
+    height: 25px;
+    left: 295px
+}
+
+.icon-1 {
+    @include list;
+    width: 25px;
+    height: 25px;
+    left: 265px
+}
+
+.order-menu {
+    @include list;
+    left: 0px;
+
+}
+
+.login-menu {
+    @include list;
+    left: 65px
+}
+
+.card {
+    width: 100vw;
+    height: 280px;
+    left: 0px;
+    right: 0px;
+    position: relative;
+    top: 140px;
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 65px;
+}
+
+.image {
+    @extend .card;
+    top: 0px;
+}
+
+.card-container {
+    width: 100vw;
+    height: 240px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+}
+
+.content {
+    font: {
+        family: $myFontFamily;
+        style: $myFontStyle;
+        size: 10px;
+    }
+
+    position: absolute;
+    top: 20px;
+}
+
+@mixin popup {
+    position: absolute;
+    height: 600px;
+    z-index: 100;
+    top: center;
+    position: center;
+    left: 0px;
+    top: 70px;
+}
+
+.order-popup {
+    @include popup;
+}
+
+.login-popup {
+    @include popup;
+}
+
+.favorite-popup {
+    @include popup;
+}
+
+.basket-popup {
+    @include popup;
+}
+
+@mixin close-popup {
+    background-color: white;
+    border: none;
+    float: right;
+    color: #484848;
+    font-size: 22px;
+    padding: 8px 8px;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    margin-top: -30px;
+}
+
+.order-close-popup {
+    @include close-popup;
+}
+
+.login-close-popup {
+    @include close-popup;
+}
+
+.favorite-close-popup {
+    @include close-popup;
+}
+
+.basket-close-popup {
+    @include close-popup;
+}
+
+@mixin cross {
+    color: #484848;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 18px;
+    position: relative;
+    left: 40%;
+    right: 50%;
+}
+
+.order {
+    @include cross;
+}
+
+.login {
+    @include cross;
+}
+
+.favorite {
+    @include cross;
+}
+
+.basket {
+    @include cross;
+}
+
+@mixin box {
+    backgroundColor: "white";
+    padding: "20px";
+    width: "400px";
+    height: "600px";
+}
+
+.userLoginBox {
+    @include box;
+}
+
+//media query
+@media only screen and (min-width: 600px) {
+    header {
+        font: {
+            family: $myFontFamily;
+            size: 40px;
+            style: $myFontStyle;
+            weight: $myFontWeight;
+            color: map-get($colors, primary);
+        }
+
+        position: absolute;
+        left: 20px;
+        top:10px;
+    }
+
+    @mixin list {
+        list-style-type: none;
+        position: absolute;
+        display: inline;
+
+        font : {
+            family: $myFontFamily;
+            style: $myFontStyle;
+            size: 20px;
+            weight: $myFontWeight;
+        }
+    }
+
+    .menu {
+        @include list;
+        top: 40px;
+        
+    }
+
+    .icon {
+        @include list;
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        left: 1270px;
+    }
+
+    .icon-1 {
+        @include list;
+        width: 35px;
+        height: 35px;
+        left: 1230px;
+    }
+
+    .order-menu {
+        @include list;
+        left: 0px;
+        width: 20px;
+
+    }
+
+    .login-menu {
+        @include list;
+        left: 245px;
+       
+    }
+
+    .card {
+        width: 280px;
+        height: 320px;
+        left: 20px;
+        right: 0px;
+        position: relative;
+        top: 150px;
+        z-index: 1;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 65px;
+        display: flex;
+        margin-right:20px;
+       
+    }
+
+    .image {
+
+        width: 280px;
+        height: 280px;
+        left: 0px;
+        right: 0px;
+        position: relative;
+        top: 140px;
+        z-index: 1;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 65px;  
+        top: 0px;
+        display: flex;
+        
+    }
+
+    .card-container {
+        width: 240px;
+        height: 340px;
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        display: flex;
+        
+     
+    }
+
+    .content {
+        font: {
+            family: $myFontFamily;
+            style: $myFontStyle;
+            size: 15px;
+            weight: bold;
+        }
+
+        position: absolute;
+        top: 280px;
+        display: flex;
+        word-spacing: 10px;
+
+    }
+
+}

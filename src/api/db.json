@@ -1,0 +1,31 @@
+{
+  "fabrics" : [
+    {
+      "id" : 1 ,
+      "fabric_type" : "ŞİŞME MONT",
+      "price" : "20 TL",
+      "length" : "3 METRE",
+      "image": "https://i.picsum.photos/id/471/200/300.jpg"
+    },
+    {
+      "id" : 2 ,
+      "fabric_type" : "KIŞLIK KAŞE",
+      "price" : "30 TL",
+      "length" : "5 METRE",
+      "image": "https://i.picsum.photos/id/471/200/300.jpg"
+    },
+    {
+      "id" : 3 ,
+      "fabric_type" : "KREP ",
+      "price" : "40 TL",
+      "length" : "5 METRE",
+      "image": "https://i.picsum.photos/id/471/200/300.jpg"
+    },
+    {
+      "id" : 4 ,
+      "fabric_type" : "İNCE KUMAŞ",
+      "price" : "40 TL",
+      "length" : "5 METRE",
+      "image": "https://i.picsum.photos/id/471/200/300.jpg"
+    }]
+}
